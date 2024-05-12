@@ -9,6 +9,22 @@
     
 </head>
 <body>
+    <script>
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Redirect function
+    function redirectToMobile() {
+        window.location.href = "https://solhtml.github.io/MathForYou"; // Replace this with the URL you want to redirect mobile users to
+    }
+
+    // Check if the user is on a mobile device and redirect if so
+    if (isMobile()) {
+        redirectToMobile();
+    }
+</script>
+
     <div class="banner">
         <div class="header">
             <img src="logo.png" class="logo">
