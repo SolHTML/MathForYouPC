@@ -1,0 +1,186 @@
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.banner {
+    width: 100vw;
+    height: 99.95vh;
+    background-color: #f2f2f2;
+    background-size: cover; 
+    background-position: center;
+}
+
+/* Style the navbar */
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Added position relative */
+}
+
+
+
+/* Float the link section to the right */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin-left: 60%;
+}
+
+.navbar ul li {
+    font-size: xx-large;
+    list-style: none;
+    margin: 0 20px;
+    position: relative;
+}
+
+/* Style the navbar links */
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Style the link underline */
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #127230;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: width 0.5s;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+
+.heading {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.websitesp{
+    text-align: center;
+    color: #0a411b;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Style the header with a grey background */
+.header {
+    overflow: hidden;
+    background-color: #0a411b;
+    display: flex;
+    align-items: center;
+}
+
+/* Style the header links */
+/* Style the header with a grey background */
+.header {
+    overflow: hidden;
+    background-image: linear-gradient(to right, #127230, #0a411b); /* Gradient background */
+    display: flex;
+    align-items: center;
+    height: 125px; /* Set the height of the header */
+}
+
+/* Style the logo image */
+.header img.logo {
+    height: 75%; /* Set the height of the image to 100% of the parent container (the header) */
+    width: auto; /* Allow the width to adjust proportionally */
+    display: block; /* Ensure the image is displayed as a block element */
+    margin-left: 75px; /* Add margin for spacing */
+}
+
+/* Other styles remain the same */
+
+
+
+
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: #0a411b;
+
+}
+
+/* Style the active/current link */
+.header a.active {
+    background-color: dodgerblue;
+    color: #0a411b;
+}
+
+/* Float the link section to the right */
+.header-right {
+    margin-left: auto;
+}
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 500px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header-right {
+        margin-left: 0;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .header a {
+        display: block;
+        text-align: center;
+    }
+}
